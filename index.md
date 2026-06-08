@@ -1,0 +1,266 @@
+---
+layout: default
+title: SiamRuby - Natural Ruby Loose Stones
+description: Premium natural unheated rubies 1mm-2.5mm from Thailand. 400,000+ stones in stock. Wholesale for jewelers, designers, and traders worldwide.
+lang: en
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiamRuby - Natural Ruby Loose Stones 1mm-2.5mm | Thailand Origin</title>
+    <meta name="description" content="Premium natural unheated rubies 1mm-2.5mm from Thailand. 400,000+ stones in stock. Wholesale for jewelers, designers, and traders worldwide.">
+    <meta name="keywords" content="natural ruby, loose ruby stones, ruby 1mm, ruby 2.5mm, unheated ruby, Thailand ruby, ruby wholesale, ruby beads">
+    <meta property="og:title" content="SiamRuby - Natural Ruby Loose Stones">
+    <meta property="og:description" content="Premium natural unheated rubies 1mm-2.5mm from Thailand. 400,000+ stones in stock.">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --ruby: #E31B23;
+            --ruby-dark: #B8181F;
+            --gold: #D4AF37;
+            --bg: #0A0A0A;
+            --bg-card: #111111;
+            --text: #F5F5F5;
+            --text-muted: #888;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        
+        /* Hero */
+        .hero { min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(227,27,35,0.15) 0%, transparent 60%); }
+        .hero-content { position: relative; z-index: 2; max-width: 700px; }
+        .hero-badge { display: inline-block; background: rgba(227,27,35,0.15); border: 1px solid rgba(227,27,35,0.4); color: var(--ruby); padding: 6px 16px; border-radius: 100px; font-size: 13px; letter-spacing: 1px; margin-bottom: 24px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 8vw, 80px); font-weight: 700; line-height: 1.1; margin-bottom: 24px; }
+        h1 span { color: var(--ruby); }
+        .hero-desc { font-size: 18px; color: var(--text-muted); margin-bottom: 40px; max-width: 500px; }
+        .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+        .btn-primary { background: var(--ruby); color: white; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-primary:hover { background: var(--ruby-dark); transform: translateY(-2px); }
+        .btn-outline { border: 1px solid rgba(255,255,255,0.2); color: var(--text); padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.2s; }
+        .btn-outline:hover { border-color: var(--ruby); color: var(--ruby); }
+        
+        /* Stats */
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding: 80px 0; }
+        .stat { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 32px; text-align: center; }
+        .stat-number { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: var(--ruby); }
+        .stat-label { color: var(--text-muted); margin-top: 8px; font-size: 14px; }
+        
+        /* Products */
+        .section { padding: 100px 0; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 40px; margin-bottom: 16px; }
+        .section-header p { color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+        
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .product-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden; transition: all 0.3s; }
+        .product-card:hover { border-color: rgba(227,27,35,0.3); transform: translateY(-4px); }
+        .product-img { aspect-ratio: 1; background: linear-gradient(135deg, #1a1a1a, #222); display: flex; align-items: center; justify-content: center; font-size: 64px; }
+        .product-info { padding: 24px; }
+        .product-size { font-size: 24px; font-weight: 700; color: var(--ruby); }
+        .product-name { font-size: 14px; color: var(--text-muted); margin: 4px 0 12px; }
+        .product-price { font-size: 20px; font-weight: 600; color: var(--gold); }
+        .product-moq { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        
+        /* Specs Table */
+        .specs-table { width: 100%; border-collapse: collapse; margin-top: 40px; }
+        .specs-table th, .specs-table td { padding: 16px 20px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .specs-table th { color: var(--text-muted); font-weight: 400; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+        .specs-table td { font-size: 15px; }
+        .specs-table tr:hover { background: rgba(255,255,255,0.02); }
+        
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, #111 0%, #1a0000 100%); border-top: 1px solid rgba(227,27,35,0.2); border-bottom: 1px solid rgba(227,27,35,0.2); text-align: center; padding: 100px 0; }
+        .cta-section h2 { font-family: 'Playfair Display', serif; font-size: 40px; margin-bottom: 16px; }
+        .cta-section p { color: var(--text-muted); margin-bottom: 40px; }
+        
+        /* Contact */
+        .contact-methods { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; }
+        .contact-method { text-align: center; }
+        .contact-icon { font-size: 32px; margin-bottom: 12px; }
+        .contact-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
+        .contact-value { font-size: 16px; margin-top: 8px; font-weight: 600; }
+        
+        /* Footer */
+        footer { padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: var(--text-muted); font-size: 13px; }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero { min-height: auto; padding: 100px 0 60px; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .section { padding: 60px 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🇹🇭 THAILAND ORIGIN · UNHEATED</div>
+                <h1>Premium <span>Natural Ruby</span> Loose Stones</h1>
+                <p class="hero-desc">Precision-cut 1mm–2.5mm natural rubies from Thailand. 400,000+ stones in stock for immediate dispatch. Trusted by jewelers and designers worldwide.</p>
+                <div class="hero-cta">
+                    <a href="https://wa.me/YourNumber" class="btn-primary">📱 WhatsApp Us</a>
+                    <a href="#products" class="btn-outline">View Sizes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats -->
+    <div class="container">
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">400K+</div>
+                <div class="stat-label">Stones in Stock</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">1-2.5mm</div>
+                <div class="stat-label">Precision Sizes</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Unheated Natural</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">48h</div>
+                <div class="stat-label">Ship Ready</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Products -->
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Size & Price Reference</h2>
+                <p>All stones are natural unheated, round brilliant cut, calibrated for uniformity</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">💎</div>
+                    <div class="product-info">
+                        <div class="product-size">1.0mm</div>
+                        <div class="product-name">Pavé & Micro Settings</div>
+                        <div class="product-price">$1–10/pc</div>
+                        <div class="product-moq">MOQ: 100pcs</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">💎</div>
+                    <div class="product-info">
+                        <div class="product-size">1.5mm</div>
+                        <div class="product-name">Halo Rings, Tennis Bracelets</div>
+                        <div class="product-price">$2–25/pc</div>
+                        <div class="product-moq">MOQ: 100pcs</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">💎</div>
+                    <div class="product-info">
+                        <div class="product-size">2.0mm</div>
+                        <div class="product-name">Solitaire Accents</div>
+                        <div class="product-price">$4–50/pc</div>
+                        <div class="product-moq">MOQ: 50pcs</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">💎</div>
+                    <div class="product-info">
+                        <div class="product-size">2.5mm</div>
+                        <div class="product-name">Statement Pieces</div>
+                        <div class="product-price">$8–80/pc</div>
+                        <div class="product-moq">MOQ: 50pcs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <table class="specs-table">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Weight</th>
+                        <th>Carat</th>
+                        <th>Price Range</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1.0mm</td><td>0.004g</td><td>~0.02ct</td><td>$1–10/pc</td><td>Pavé, micro-settings</td></tr>
+                    <tr><td>1.5mm</td><td>0.010g</td><td>~0.05ct</td><td>$2–25/pc</td><td>Halo rings, tennis bracelets</td></tr>
+                    <tr><td>2.0mm</td><td>0.018g</td><td>~0.09ct</td><td>$4–50/pc</td><td>Solitaire accents, earrings</td></tr>
+                    <tr><td>2.5mm</td><td>0.032g</td><td>~0.16ct</td><td>$8–80/pc</td><td>Statement rings, pendants</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <!-- Quality -->
+    <section class="section" style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality Guarantee</h2>
+                <p>Every stone is hand-selected and certified natural</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" style="text-align: center; padding: 32px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🎨</div>
+                    <h3 style="margin-bottom: 8px;">Vivid Red</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Pigeon blood references available. Deep saturation, natural inclusions as proof of origin.</p>
+                </div>
+                <div class="product-card" style="text-align: center; padding: 32px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🔬</div>
+                    <h3 style="margin-bottom: 8px;">SI Clarity</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Eye-visible inclusions normal at this size. Proof of natural origin, not treated stones.</p>
+                </div>
+                <div class="product-card" style="text-align: center; padding: 32px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">✂️</div>
+                    <h3 style="margin-bottom: 8px;">Wuzhou Cut</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Precision-cut in Wuzhou, China — world-renowned for gemstone cutting excellence.</p>
+                </div>
+                <div class="product-card" style="text-align: center; padding: 32px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🔥</div>
+                    <h3 style="margin-bottom: 8px;">Unheated</h3>
+                    <p style="color: var(--text-muted); font-size: 14px;">Zero heat treatment. Certified natural. Perfect for high-end fine jewelry brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Source?</h2>
+            <p>Contact us on WhatsApp for instant response, catalog, and quote.</p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-label">WhatsApp</div>
+                    <div class="contact-value">+[Your Number]</div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">✉️</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">contact@siamruby.com</div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">🌐</div>
+                    <div class="contact-label">Response Time</div>
+                    <div class="contact-value">Within 24 Hours</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2026 SiamRuby. Premium Natural Ruby Loose Stones from Thailand.</p>
+        </div>
+    </footer>
+</body>
+</html>
