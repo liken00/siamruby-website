@@ -1,0 +1,12 @@
+title: SiamRuby - Natural Ruby Loose Stones
+description: Premium natural unheated rubies 1mm-2.5mm from Thailand. 400,000+ stones in stock. Wholesale for jewelers, designers, and traders worldwide.
+lang: en
+theme: minima
+markdown: kramdown
+permalink: /
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package*.json
+future: true
